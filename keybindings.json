@@ -1,0 +1,71 @@
+// Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+    {
+        //masque la barre lateral et les icones
+        "key": "alt+1",
+        "command": "multiCommand.makeRoom"
+    },
+    {   
+        // deplace en fin de ligne
+        "key": "ctrl+alt+z",
+        "command": "cursorLineEnd",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "editor.action.toggleWordWrap",
+        "when": "editorTextFocus"
+    }
+    
+    ,
+    {
+        // deplace en debut de ligne
+        "key": "ctrl+alt+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        //selectionne les occurences (les meme mot sélectionnées)
+        "key": "ctrl+shift+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus"
+    },
+    {
+        //ouvre le ficher dans le quel on ce trouve dans l'explorateur de fichier
+        "key": "ctrl+shift+o",
+        "command": "revealFileInOS",
+    },
+    {
+        // affiche une list en detéction des symbole
+        "key": "ctrl+r",
+        "command": "workbench.action.gotoSymbol",
+    },
+    {
+        // crée un nouveau document dans la barre laterale
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+    },
+    {  
+        // permet de selectionner dans une phrase mot par mot
+        "key": "ctrl+alt+q",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.reloadWindow",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k+p",
+        "command": "editor.fold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k+d",
+        "command": "editor.unfold",
+        "when": "editorTextFocus"
+    }
+    
+      
+]
